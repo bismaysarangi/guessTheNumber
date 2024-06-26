@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #000019;
+    color: aliceblue;
+}
+
+.header {
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    background-color: #008080;
+}
+
+.header a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main-contents {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-contents h1 {
+    font-size: 23px;
+}
+
+.main-contents .container {
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 7%;
+}
+
+.main-contents .entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry input {
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:after {
+    background-color: #c76c6c;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+button:hover:after {
+  transform: translate(0, 0);
+}
+
+button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 0 40px;
+    }
+}
+
+p {
+    margin-top: 10px;
+}
+
+
+/* Footer Section */
+
+.footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .heading {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 20px;
+
+}
+
+.footer h1 {
+    font-size: 23px;
+}
+
+.footer .social-media {
+    padding-right: 5%;
+    padding-top: 20px;
+}
+
+.footer .social-media a {
+    color: aliceblue;
+    font-size: 23px;
+    padding-right: 7px;
+}
+
+.footer .social-media h3 {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+}
+
+.footer-ending-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(142, 160, 175);
+}
+
+.footer a {
+    transition: color 0.2s !important;
+  }
+  
+  .footer ion-icon[name="logo-instagram"]:hover {
+    color: rgb(188, 42, 141);
+  }
+  
+  .footer ion-icon[name="logo-linkedin"]:hover {
+    color: rgb(0, 119, 181);
+  }
+  
+  .footer ion-icon[name="logo-github"]:hover {
+    color: #171515;
+  }
+  
+  .footer ion-icon[name="logo-twitter"]:hover {
+    color: #171515;
+  }
+
+@media screen and (min-width: 270px) and (max-width:670px) {
+    .footer .heading h1 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .footer .heading span {
+        font-size: 12px;
+    }
+
+    .footer .social-media a {
+        font-size: 13.5px;
+    }
+
+    .footer-ending-line {
+        font-size: 15px;
+    }
+
+    .footer .social-media h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
