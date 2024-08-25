@@ -15,17 +15,17 @@ body {
     height: 13vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
     background-color: #008080;
 }
 
-.header a{
+/* .header a{
     text-decoration: none;
     color: aliceblue;
-}
+} */ 
 
 .main-contents {
     height: 70vh;
@@ -122,8 +122,21 @@ p {
     margin-top: 10px;
 }
 
+@media screen and (min-width: 270px) and (max-width:670px) {
+    .header {
+        margin-top: 10%;
+    }
+    .header h3 {
+        font-size: 15px;
+    }
 
-/* Footer Section */
+    .main-contents h1 {
+        font-size: 18px;
+    }
+}
+
+
+/* Footer Section
 
 .footer {
     height: 20vh;
@@ -211,4 +224,4 @@ p {
         font-size: 18px;
         font-weight: 600;
     }
-}
+} */
