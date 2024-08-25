@@ -40,7 +40,7 @@ function guessesNumber() {
             input.value = "";
         } 
         else {
-            wrng.innerHTML = "Congratulations, you guessed the correct answer.";
+            wrng.innerHTML = "Congratulations, you guessed the correct number.";
             setTimeout(() => {
                 resetGame();
             }, 5000);
